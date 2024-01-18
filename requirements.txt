@@ -1,5 +1,5 @@
 fastapi==0.68.1        # FastAPI web framework
-uvicorn==0.15.0        # ASGI server for FastAPI
+uvicorn==0.26.0        # ASGI server for FastAPI
 pydantic==1.9.0        # Data validation using Python type hints
 httpx==0.21.0          # HTTP client for testing FastAPI endpoints
 
