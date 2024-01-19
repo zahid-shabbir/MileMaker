@@ -6,4 +6,3 @@ httpx==0.21.0          # HTTP client for testing FastAPI endpoints
 # For testing
 pytest==7.4.4          # Testing framework
 iso8601==0.1.16
-

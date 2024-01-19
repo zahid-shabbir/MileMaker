@@ -2,12 +2,14 @@
 from fastapi import HTTPException, Request, APIRouter, FastAPI
 from typing import List
 from app.models import ActivityLog, EarningsStatement
-from app.utils import get_rate_card, apply_rate_card
+from app.utils.rate_card_utils import get_rate_card
+from app.utils.earnings_statement_utils import apply_rate_card
 from fastapi import HTTPException
 
 VALID_TIERS = ["bronze_tier", "silver_tier", "gold_tier", "platinum_tier"]
 
 router = APIRouter()
+
 
 @router.post("/earnings/{tier}")
 async def calculate_earnings(tier: str, request: Request):
